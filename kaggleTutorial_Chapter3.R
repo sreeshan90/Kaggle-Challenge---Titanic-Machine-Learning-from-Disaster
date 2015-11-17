@@ -43,7 +43,7 @@ str(test)
 set.seed(111)
 
 # Apply the Random Forest Algorithm
-my_forest <- randomForest(as.factor(Survived) ~ Pclass+Sex+Age+SibSp+Parch+Fare+Embarked,data = train, importance=TRUE,ntree=1000)
+my_forest <- randomForest(as.factor(Survived) ~ Pclass+Sex+Age+SibSp+Parch+Fare+Embarked,data = train, importance=TRUE,ntree=2000)
 
 # Make your prediction using the test set
 my_prediction <- predict(my_forest, test)
